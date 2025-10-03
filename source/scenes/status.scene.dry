@@ -27,13 +27,13 @@ SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in g
 
 [? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-Internal dissent: [+ dissent_percent : dissent +]
+Unrest: [+ dissent_percent : dissent +]
 
 = Government
 
-President: [+ president +]
+Elector: [+ president +]
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Heir Apparent: [+ chancellor +] ([+ chancellor_party +])
 
 Reichstag composition:
 
@@ -55,7 +55,7 @@ Reichstag composition:
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
-[? if spd_in_government = 1 : Budget: [+ budget +] ?]
+Budget: [+ budget +]
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
@@ -63,7 +63,7 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 Inflation: [+ inflation_2 +]%
 
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+Unemployment: [+ unemployed_2 +]%
 
 Economic growth: [+ economic_growth_2 +]%
 
@@ -88,7 +88,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
 
-= Internal Factions of the SPD
+= Factions of Brandenburg
 
 {!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
